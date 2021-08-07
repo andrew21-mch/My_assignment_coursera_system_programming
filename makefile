@@ -1,6 +1,11 @@
-README.md:
 	echo "# Coursera Course Project- Guessing game" > README.md
-	echo "" >> README.md
-	echo Created on $$(date +%D) at $$(date +%H:%M:%S) >> README.md
-	echo "" >> README.md
-	echo Script guessinggame.sh contains $$(wc -l guessinggame.sh | egrep -o "[0-9]+") lines >> README.md
+	echo "*by Johns Hopkins University on [coursera.org](https://www.coursera.org/learn/unix/)*" >> README.md
+
+	echo "# Execution Date: " >> README.md
+	date +"%m-%d-%y" >> README.md 
+
+	echo "# Execution Time: " >> README.md
+	date +"date %T" >> README.md
+
+	echo "# Number of Lines: " >> README.md
+	wc -l guessinggame.sh >> README.md
